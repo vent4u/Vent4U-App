@@ -37,6 +37,10 @@ const routes: Routes = [
   {
     path: 'adjust-temp',
     loadChildren: () => import('./pages/adjust-temp/adjust-temp.module').then( m => m.AdjustTempPageModule)
+  },
+  {
+    path: 'system-solution',
+    loadChildren: () => import('./pages/system-solution/system-solution.module').then( m => m.SystemSolutionPageModule)
   }
 ];
 @NgModule({
