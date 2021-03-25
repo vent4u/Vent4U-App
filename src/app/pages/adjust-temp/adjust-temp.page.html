@@ -1,9 +1,39 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>AdjustTemp</ion-title>
+    <ion-title>
+      Welcome to Zealand
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-</ion-content>
+
+  <div class="ion-text-center">
+   <p>The current temperature of your location is</p>
+  </div>
+
+  <div class="ion-text-center">
+    <b><h1>{{rangeVal}}°C</h1></b>
+  </div>
+
+   <div class="ion-text-center">
+    <p>Toggle the bar below to adjust <br> your comfortable temperature</p>
+   </div>
+
+  <ion-item><p>15</p>
+    <ion-range [(ngModel)]="rangeVal" pin="true" min="15" max="25" step="1" snaps color="danger" >
+      <ion-icon slot="start" size="small" color="danger" name="thermometer">15</ion-icon>
+      <ion-icon slot="end" color="danger" name="thermometer"></ion-icon>
+    </ion-range><p>25</p>
+  </ion-item>
+
+
+  <div class="ion-text-center">
+    <ion-button href="/tabs/tab1" expand="block"><b>Back</b></ion-button>
+  </div>
