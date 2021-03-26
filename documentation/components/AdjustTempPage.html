@@ -287,7 +287,10 @@ export class AdjustTempPage {
         <pre class="line-numbers"><code class="language-html">&lt;ion-content [fullscreen]&#x3D;&quot;true&quot;&gt;
   &lt;ion-header&gt;
     &lt;ion-toolbar&gt;
-      &lt;ion-title size&#x3D;&quot;large&quot;&gt;Adjust temperature&lt;/ion-title&gt;
+      &lt;ion-title size&#x3D;&quot;medium&quot;&gt;Adjust temperature&lt;/ion-title&gt;
+      &lt;ion-buttons slot&#x3D;&quot;start&quot;&gt;
+        &lt;ion-back-button defaultHref &#x3D;&quot;start-screen&quot;&gt;&lt;/ion-back-button&gt;
+       &lt;/ion-buttons&gt;
     &lt;/ion-toolbar&gt;
   &lt;/ion-header&gt;
 
@@ -313,7 +316,7 @@ export class AdjustTempPage {
 
 
   &lt;div class&#x3D;&quot;ion-text-center&quot;&gt;
-    &lt;ion-button href&#x3D;&quot;/zone-screen&quot; expand&#x3D;&quot;block&quot;&gt;&lt;b&gt;Back&lt;/b&gt;&lt;/ion-button&gt;
+    &lt;ion-button expand&#x3D;&quot;block&quot;&gt;&lt;b&gt;Save&lt;/b&gt;&lt;/ion-button&gt;
   &lt;/div&gt;
 </code></pre>
     </div>
@@ -350,7 +353,7 @@ export class AdjustTempPage {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-content [fullscreen]="true">  <ion-header>    <ion-toolbar>      <ion-title size="large">Adjust temperature</ion-title>    </ion-toolbar>  </ion-header>  <div class="ion-text-center">   <p>The current temperature of your location is</p>  </div>  <div class="ion-text-center">    <b><h1>{{rangeVal}}°C</h1></b>  </div>   <div class="ion-text-center">    <p>Toggle the bar below to adjust <br> your comfortable temperature</p>   </div>  <ion-item><p>15</p>    <ion-range [(ngModel)]="rangeVal" pin="true" min="15" max="25" step="1" snaps color="danger" >      <ion-icon slot="start" size="small" color="danger" name="thermometer">15</ion-icon>      <ion-icon slot="end" color="danger" name="thermometer"></ion-icon>    </ion-range><p>25</p>  </ion-item>  <div class="ion-text-center">    <ion-button href="/zone-screen" expand="block"><b>Back</b></ion-button>  </div></div>'
+        var COMPONENT_TEMPLATE = '<div><ion-content [fullscreen]="true">  <ion-header>    <ion-toolbar>      <ion-title size="medium">Adjust temperature</ion-title>      <ion-buttons slot="start">        <ion-back-button defaultHref ="start-screen"></ion-back-button>       </ion-buttons>    </ion-toolbar>  </ion-header>  <div class="ion-text-center">   <p>The current temperature of your location is</p>  </div>  <div class="ion-text-center">    <b><h1>{{rangeVal}}°C</h1></b>  </div>   <div class="ion-text-center">    <p>Toggle the bar below to adjust <br> your comfortable temperature</p>   </div>  <ion-item><p>15</p>    <ion-range [(ngModel)]="rangeVal" pin="true" min="15" max="25" step="1" snaps color="danger" >      <ion-icon slot="start" size="small" color="danger" name="thermometer">15</ion-icon>      <ion-icon slot="end" color="danger" name="thermometer"></ion-icon>    </ion-range><p>25</p>  </ion-item>  <div class="ion-text-center">    <ion-button expand="block"><b>Save</b></ion-button>  </div></div>'
     var COMPONENTS = [{'name': 'AdjustTempPage', 'selector': 'app-adjust-temp'},{'name': 'AdjustTempPage', 'selector': 'app-adjust-temp'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ExploreContainerComponent', 'selector': 'app-explore-container'},{'name': 'OpeningScreenPage', 'selector': 'app-opening-screen'},{'name': 'PickZonePage', 'selector': 'app-pick-zone'},{'name': 'SignInPage', 'selector': 'app-sign-in'},{'name': 'StartScreenPage', 'selector': 'app-start-screen'},{'name': 'SystemresetedPage', 'selector': 'app-systemreseted'},{'name': 'SystemSolutionPage', 'selector': 'app-system-solution'},{'name': 'Tab1Page', 'selector': 'app-tab1'},{'name': 'Tab2Page', 'selector': 'app-tab2'},{'name': 'Tab3Page', 'selector': 'app-tab3'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TempSumPage', 'selector': 'app-temp-sum'},{'name': 'WelcomeScreenPage', 'selector': 'app-welcome-screen'},{'name': 'ZoneScreenPage', 'selector': 'app-zone-screen'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'AdjustTempPage'};

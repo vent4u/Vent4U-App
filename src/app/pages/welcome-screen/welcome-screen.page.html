@@ -1,81 +1,82 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="warning">
-  <ion-title>
-  Welcome to Zealand
+  <ion-title><br>
+  <h4>Welcome to Zealand</h4>
   </ion-title>
   </ion-toolbar>
  </ion-header>
   
  <ion-content [fullscreen]="true">
   
-  <ion-card>
-  <ion-grid>
-  <ion-row>
+  <ion-grid class="ion-wrap">
+  <ion-row class=" ion-align-items-center ion-padding-vertical">
   <ion-col>
-  <ion-label>Area Climate</ion-label>
+  <div class="ion-text-center ">
+  <!-- <ion-label>Climate inside</ion-label> -->
+  <ion-label ></ion-label><h1>20&deg;</h1></div>
   </ion-col>
-  <ion-col>
+  <ion-col class=" ion-justify-content-around">
+  <div class="ion-text-center" >
+  <div class="ion-left-floating">
   <ion-icon name="water-outline"></ion-icon>
-  <ion-label>40%</ion-label>
-  <ion-label>Humidity</ion-label>
+  <h5>40%</h5>
+  </div>
+  <h6><b>Comfort</b></h6>
+  </div>
+  <div>
+  
+  </div><br>
+  <div class="ion-text-center" ><h3>
+  <ion-label>CO2</ion-label>
+  <ion-progress-bar color="success" value="0.4"></ion-progress-bar>
+  <ion-label><h5>Good</h5></ion-label>
+  </h3></div>
   </ion-col>
   </ion-row>
-  <ion-row>
+  </ion-grid>
+  <br>
+  <ion-button routerLink="/pick-zone" color="warning" expand="block">Select zone</ion-button>
+  
+  
+  <ion-grid class="ion-wrap">
+  <ion-row class=" ion-align-items-center ion-padding-vertical">
   <ion-col>
-  <ion-label >20°C</ion-label> 
+  <div class="ion-text-center "><h4>14:00</h4></div>
   </ion-col>
-  <ion-col>
-  <ion-label>CO2</ion-label>
-  <ion-progress-bar value="0.8"></ion-progress-bar>
-  <ion-label>Good</ion-label>
+  <ion-col class=" ion-justify-content-around">
+  <div class="ion-text-center" ><h3><b>Roskilde</b></h3></div><div></div><br><div class="ion-text-center" ><h3>18&deg;</h3></div>
+  </ion-col>
+  <ion-col class="ion-text-center ion-justify-content-center" >
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="30" viewBox="0 0 24 24"><path d="M3.55,18.54L4.96,19.95L6.76,18.16L5.34,16.74M11,22.45C11.32,22.45 13,22.45 13,22.45V19.5H11M12,5.5A6,6 0 0,0 6,11.5A6,6 0 0,0 12,17.5A6,6 0 0,0 18,11.5C18,8.18 15.31,5.5 12,5.5M20,12.5H23V10.5H20M17.24,18.16L19.04,19.95L20.45,18.54L18.66,16.74M20.45,4.46L19.04,3.05L17.24,4.84L18.66,6.26M13,0.55H11V3.5H13M4,10.5H1V12.5H4M6.76,4.84L4.96,3.05L3.55,4.46L5.34,6.26L6.76,4.84Z" /></svg>
   </ion-col>
   </ion-row>
   </ion-grid>
   
-  </ion-card>
-  
-   
-  <ion-card>
-  <ion-item>
-  <ion-icon name="pin" slot="start"></ion-icon>
-  <ion-label>Climate outside</ion-label>
-  <ion-button fill="outline" slot="end" href="https://www.dmi.dk">Details</ion-button>
-  </ion-item>
-  <ion-card-content>
-  
-  <!-- <img src="https://usercontent.one/wp/www.fredericia.nu/wp-content/uploads/2019/02/b3f3ef2d-bbf6-4e5c-a4cf-1b4bab125363-1024x768.jpg"> -->
-  
-  <!-- https://www.dmi.dk -->
-  <img src="https://kodytechnolab.com/img/blog/small/cost-to-develop-weather-mobile-app-like-arabia-weather2.jpg">
-  </ion-card-content>
-  </ion-card>
-  
  </ion-content>
-
- <ion-button routerLink="/pick-zone">Select Zone</ion-button>
   
- <ion-footer>
+ <ion-footer color="warning">
   <ion-toolbar>
   <ion-tabs mode="ios">
   <ion-tab-bar slot="bottom">
   
   <ion-item href="#">
   <ion-tab-button tab="profile">
-  <ion-icon name="person-circle"></ion-icon>
+  <ion-icon stok="small" name="person-circle"></ion-icon>
   <ion-label>Profile</ion-label>
   </ion-tab-button>
+  <br>
   </ion-item>
   
   <ion-item href="#">
   <ion-tab-button href="#" tab="settings">
-  <ion-icon name="settings"></ion-icon>
+  <ion-icon stok="small" name="settings"></ion-icon>
   <ion-label>Settings</ion-label>
   </ion-tab-button>
   </ion-item>
   
   <ion-item href="#">
   <ion-tab-button href="#" tab="chatbox-outline">
-  <ion-icon name="chatbox-outline"></ion-icon>
+  <ion-icon stok="small" name="chatbox-outline"></ion-icon>
   <ion-label>Notification</ion-label>
   </ion-tab-button>
   </ion-item>
