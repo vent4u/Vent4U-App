@@ -41,7 +41,8 @@ const routes: Routes = [
   {
     path: 'system-solution',
     loadChildren: () => import('./pages/system-solution/system-solution.module').then( m => m.SystemSolutionPageModule)
-  },  {
+  },
+  {
     path: 'systemreseted',
     loadChildren: () => import('./pages/systemreseted/systemreseted.module').then( m => m.SystemresetedPageModule)
   }

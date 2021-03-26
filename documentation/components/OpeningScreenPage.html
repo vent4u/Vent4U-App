@@ -237,16 +237,23 @@ export class OpeningScreenPage implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;ion-content [fullscreen]&#x3D;&quot;true&quot;&gt;
-  &lt;ion-slides pager&#x3D;&quot;true&quot;&gt;
-  &lt;ion-slide &gt;
-  &lt;ion-img routerLink&#x3D;&quot;/welcome-screen&quot; src&#x3D;&quot;https://www.flaticon.com/premium-icon/icons/svg/2760/2760389.svg&quot;&gt;&lt;/ion-img&gt;
-  &lt;!-- &lt;ion-img src&#x3D;&quot;./images/house.svg&quot;&gt;&lt;/ion-img&gt; --&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;ion-content [fullscreen]&#x3D;&quot;true&quot;  &gt;
   
-  &lt;/ion-slide&gt;
-  &lt;ion-label&gt;&lt;/ion-label&gt;
-  &lt;/ion-slides&gt;
-    &lt;/ion-content&gt;
+
+&lt;ion-grid class&#x3D;&quot;backg ion-padding-vertical&quot;&gt;
+  &lt;ion-row  &gt;
+    
+    &lt;ion-col&gt;&lt;/ion-col&gt;
+      
+    &lt;ion-col class&#x3D;&quot;ion-align-items-center&quot; &gt;
+      &lt;div&gt;&lt;ion-img routerLink&#x3D;&quot;/welcome-screen&quot; src&#x3D;&quot;assets/house.png&quot;&gt;&lt;/ion-img&gt; &lt;/div&gt;
+      &lt;/ion-col&gt;
+      &lt;ion-col&gt;&lt;/ion-col&gt;
+      
+  &lt;/ion-row&gt;&lt;/ion-grid&gt;
+  &lt;div class&#x3D;&quot;ion-text-center&quot;&gt; ENTER&lt;/div&gt;
+  &lt;/ion-content&gt;
+
 
     
   
@@ -260,15 +267,18 @@ export class OpeningScreenPage implements OnInit {
                     <code>./opening-screen.page.scss</code>
                 </p>
                 <pre class="line-numbers"><code class="language-scss">ion-content {
-    --background: #e4be42;
+    --background:#FFF375;
+;
    }
    ion-slides {
     height: 100%;
    }
     
    ion-img {
-    width: 150px;
-    height: 150px;
+   margin-top: 45%;
+    width: 200px;
+    height: 200px;
+
    }
 
    </code></pre>
@@ -299,7 +309,7 @@ export class OpeningScreenPage implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-content [fullscreen]="true">  <ion-slides pager="true">  <ion-slide >  <ion-img routerLink="/welcome-screen" src="https://www.flaticon.com/premium-icon/icons/svg/2760/2760389.svg"></ion-img>  <!-- <ion-img src="./images/house.svg"></ion-img> -->    </ion-slide>  <ion-label></ion-label>  </ion-slides>    </ion-content>         </div>'
+        var COMPONENT_TEMPLATE = '<div><ion-content [fullscreen]="true"  >  <ion-grid class="backg ion-padding-vertical">  <ion-row  >        <ion-col></ion-col>          <ion-col class="ion-align-items-center" >      <div><ion-img routerLink="/welcome-screen" src="assets/house.png"></ion-img> </div>      </ion-col>      <ion-col></ion-col>        </ion-row></ion-grid>  <div class="ion-text-center"> ENTER</div>  </ion-content>         </div>'
     var COMPONENTS = [{'name': 'AdjustTempPage', 'selector': 'app-adjust-temp'},{'name': 'AdjustTempPage', 'selector': 'app-adjust-temp'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ExploreContainerComponent', 'selector': 'app-explore-container'},{'name': 'OpeningScreenPage', 'selector': 'app-opening-screen'},{'name': 'PickZonePage', 'selector': 'app-pick-zone'},{'name': 'SignInPage', 'selector': 'app-sign-in'},{'name': 'StartScreenPage', 'selector': 'app-start-screen'},{'name': 'SystemresetedPage', 'selector': 'app-systemreseted'},{'name': 'SystemSolutionPage', 'selector': 'app-system-solution'},{'name': 'Tab1Page', 'selector': 'app-tab1'},{'name': 'Tab2Page', 'selector': 'app-tab2'},{'name': 'Tab3Page', 'selector': 'app-tab3'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TempSumPage', 'selector': 'app-temp-sum'},{'name': 'WelcomeScreenPage', 'selector': 'app-welcome-screen'},{'name': 'ZoneScreenPage', 'selector': 'app-zone-screen'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'OpeningScreenPage'};
