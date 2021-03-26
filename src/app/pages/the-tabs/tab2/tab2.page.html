@@ -1,17 +1,50 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar class="top-WTZ">
     <ion-title>
-      Tab 2
+      <div class="ion-text-center"> Welcome to Zealand</div>
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
-</ion-content>
+  <ion-grid class="backg ion-padding-vertical">
+    <ion-row >
+      <ion-col class=" text-not ion-padding-start ion-padding-vertical">
+        <div class="ion-padding-vertical" ><p>Do you feel dizzy?<br>Maybe it is time to open a window, or go for a walk outside.
+           </p></div>
+      </ion-col>
+      <ion-col class="ion-padding-vertical">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="160" height="160" viewBox="0 0 24 24" ><path  d="M13 3C9.2 3 6.2 5.9 6 9.7L4.1 12.2C3.9 12.5 4.1 13 4.5 13H6V16C6 17.1 6.9 18 8 18H9V21H16V16.3C18.4 15.2 20 12.8 20 10C20 6.1 16.9 3 13 3M14 15H12V13H14V14M14 11H12V5H14V11Z" fill="white" /></svg>
+        </ion-col>
+       
+    </ion-row></ion-grid>
+    <ion-grid>
+      <ion-row class="ion-padding">
+        
+        <ion-col >
+          
+          <ion-button expand="block"  (click)="navigate()">systemsolution</ion-button>
+                  
+           
+        </ion-col>
+        <ion-col >
+          
+       <ion-button expand="block" color="secondary"> LOGIN</ion-button>
+        
+      <div><p>For use this tool you need to <b> Login</b></p> </div>
+           
+        </ion-col>
+ 
+      </ion-row></ion-grid>
+    <ion-grid class="ion-wrap">
+      <ion-row class=" ion-align-items-center ion-padding-vertical">
+        <ion-col>
+      <div class="ion-text-center "><h1>14:00  </h1></div>
+        </ion-col>
+        <ion-col class=" ion-justify-content-around">
+         <div class="ion-text-center" ><h3><b>Roskilde</b></h3></div><div></div><br><div class="ion-text-center" ><h3>18&deg;</h3></div>
+        </ion-col>
+          <ion-col  class="ion-text-center ion-justify-content-center" >
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="30" viewBox="0 0 24 24"><path d="M3.55,18.54L4.96,19.95L6.76,18.16L5.34,16.74M11,22.45C11.32,22.45 13,22.45 13,22.45V19.5H11M12,5.5A6,6 0 0,0 6,11.5A6,6 0 0,0 12,17.5A6,6 0 0,0 18,11.5C18,8.18 15.31,5.5 12,5.5M20,12.5H23V10.5H20M17.24,18.16L19.04,19.95L20.45,18.54L18.66,16.74M20.45,4.46L19.04,3.05L17.24,4.84L18.66,6.26M13,0.55H11V3.5H13M4,10.5H1V12.5H4M6.76,4.84L4.96,3.05L3.55,4.46L5.34,6.26L6.76,4.84Z" /></svg>
+         </ion-col>
+       </ion-row></ion-grid>
+      </ion-content>
