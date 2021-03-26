@@ -1,9 +1,86 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>zoneScreen</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+  <ion-title>
+  Welcome to Zealand
+  </ion-title>
   </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
-</ion-content>
+ </ion-header>
+  
+ <ion-content [fullscreen]="true">
+  
+  <ion-card>
+  <ion-grid>
+  <ion-row>
+  <ion-col>
+  <ion-label>Climate outside</ion-label>
+  </ion-col>
+  <ion-col>
+  <ion-icon name="water-outline"></ion-icon>
+  <ion-label>40%</ion-label>
+  <ion-label>Humidity</ion-label>
+  </ion-col>
+  </ion-row>
+  <ion-row>
+  <ion-col>
+  <ion-label >20C</ion-label> 
+  </ion-col>
+  <ion-col>
+  <ion-label>CO2</ion-label>
+  <ion-progress-bar value="0.5"></ion-progress-bar>
+  <ion-label>Good</ion-label>
+  </ion-col>
+  </ion-row>
+  </ion-grid>
+  
+  </ion-card>
+  
+  <ion-label class="ion-text-wrap">
+  Are you comfortable?
+  </ion-label>
+  <ion-button expand="block" size="default" color="warning" mode="ios">Yes, it's perfect!</ion-button>
+  <ion-button expand="block" size="default" color="warning" mode="ios">No,I want to change</ion-button>
+  
+  <ion-card mode="ios">
+  <ion-item>
+  <ion-icon name="pin" slot="start"></ion-icon>
+  <ion-label>Climate outside</ion-label>
+  <ion-button fill="outline" slot="end" href="https://www.dmi.dk">Details</ion-button>
+  </ion-item>
+  <ion-card-content>
+  <!-- https://www.dmi.dk -->
+  <img src="https://kodytechnolab.com/img/blog/small/cost-to-develop-weather-mobile-app-like-arabia-weather2.jpg">
+  </ion-card-content>
+  </ion-card>
+  
+ </ion-content>
+  
+ <ion-footer>
+  <ion-toolbar>
+  <ion-tabs mode="ios">
+  <ion-tab-bar slot="bottom">
+  
+  <ion-item href="#">
+  <ion-tab-button tab="profile">
+  <ion-icon name="person-circle"></ion-icon>
+  <ion-label>Profile</ion-label>
+  </ion-tab-button>
+  </ion-item>
+  
+  <ion-item href="#">
+  <ion-tab-button href="#" tab="settings">
+  <ion-icon name="settings"></ion-icon>
+  <ion-label>Settings</ion-label>
+  </ion-tab-button>
+  </ion-item>
+  
+  <ion-item href="#">
+  <ion-tab-button href="#" tab="chatbox-outline">
+  <ion-icon name="chatbox-outline"></ion-icon>
+  <ion-label>Notification</ion-label>
+  </ion-tab-button>
+  </ion-item>
+  
+  </ion-tab-bar>
+  </ion-tabs> 
+  </ion-toolbar>
+ </ion-footer>
