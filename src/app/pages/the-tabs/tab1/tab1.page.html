@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-title>Permissions</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/welcome-screen"></ion-back-button>
+      <ion-back-button defaultHref="/sign-in"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -10,7 +10,7 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Permissions</ion-title>
 
 
     </ion-toolbar>
@@ -30,6 +30,8 @@
       <ion-toggle></ion-toggle>
     </ion-item>
   </ion-list>
+
+  <ion-button routerLink ="/adjust-temp" color="transparent" size="large" style="margin-top: 20%; margin-left: 40%;"><img src="assets/icon/front.png"></ion-button>
 
 </ion-content>
 

@@ -1,7 +1,10 @@
 <ion-content [fullscreen]="true">
   <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Adjust temperature</ion-title>
+      <ion-title size="medium">Adjust temperature</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref ="start-screen"></ion-back-button>
+       </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
@@ -27,5 +30,5 @@
 
 
   <div class="ion-text-center">
-    <ion-button href="/zone-screen" expand="block"><b>Back</b></ion-button>
+    <ion-button expand="block"><b>Save</b></ion-button>
   </div>
