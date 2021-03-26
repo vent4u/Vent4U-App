@@ -11,7 +11,8 @@ export class SystemSolutionPage implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-  }
+      }
+      
   navigate() {
     console.log('Navigationnn ');
     this.router.navigate(['/systemreseted']);
