@@ -3,13 +3,10 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'tab1',
+    path: '',
     loadChildren: () => import('./pages/the-tabs/tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: '',
-    loadChildren: () => import('./pages/opening-screen/opening-screen.module').then( m => m.OpeningScreenPageModule)
-  },{
     path: 'start-screen',
     loadChildren: () => import('./pages/start-screen/start-screen.module').then( m => m.StartScreenPageModule)
   },
@@ -38,12 +35,12 @@ const routes: Routes = [
     loadChildren: () => import('./pages/zone-screen/zone-screen.module').then( m => m.ZoneScreenPageModule)
   },
   {
-    path: 'system-solution',
-    loadChildren: () => import('./pages/system-solution/system-solution.module').then( m => m.SystemSolutionPageModule)
-  },
-  {
     path: 'adjust-temp',
     loadChildren: () => import('./pages/adjust-temp/adjust-temp.module').then( m => m.AdjustTempPageModule)
+  },
+  {
+    path: 'system-solution',
+    loadChildren: () => import('./pages/system-solution/system-solution.module').then( m => m.SystemSolutionPageModule)
   }
 ];
 @NgModule({
