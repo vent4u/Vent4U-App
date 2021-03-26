@@ -1,9 +1,35 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>pickZone</ion-title>
+    <ion-buttons slot="start">
+     <ion-back-button defaultHref ="tab1"></ion-back-button>
+    </ion-buttons>         
+    <ion-title>Welcome to Zealand</ion-title>
   </ion-toolbar>
 </ion-header>
+  
 
-<ion-content>
+<ion-content >
+  <ion-text>
+    <h1 class="heading1" style ="margin-top: 15%;">Please select one of the zones</h1>
+  </ion-text>
 
+  
+  
+  <ion-item>
+    <ion-label>Zone</ion-label>
+    <ion-select value="Zone1">
+      <ion-select-option value="Zone1">Zone1</ion-select-option>
+      <ion-select-option value="Zone2">Zone2</ion-select-option>
+      <ion-select-option value="Zone3">Zone3</ion-select-option>
+      <ion-select-option value="Zone4">Zone4</ion-select-option>
+    </ion-select>
+  </ion-item> 
+   
+    <ion-button routerLink ="/temp-sum" color="transparent" size="large" style="margin-top: 20%; margin-left: 40%;"><img src="assets/icon/front.png"></ion-button>
+  
+   
 </ion-content>
+
+<ion-footer>
+  <ion-img  class="map" src="assets/icon/mapclass.png"></ion-img>
+</ion-footer>
