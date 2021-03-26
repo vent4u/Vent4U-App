@@ -1,9 +1,25 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>tempSum</ion-title>
+    <ion-buttons slot="start">
+     <ion-back-button defaultHref ="/pick-zone"></ion-back-button>
+    </ion-buttons>         
+    <ion-title>Welcome to Zealand</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
 
+<ion-content >
+     <ion-text>
+      <h1 class= "Heading1">Temperature summary</h1>
+    </ion-text>
+    <ion-text>
+    <h2 class="Heading2" style ="position:relative; top:35px;">The current temperature of your location is</h2>
+  </ion-text>
+  <ion-text>
+    <h3 class="Heading3" style ="position:relative; top:100px;">22°C</h3>
+  </ion-text>
+  <ion-button routerLink ="/zone-screen" color="transparent" size="medium" style="margin-top: 40%; margin-left: 40%;"><img src="assets/icon/front.png"></ion-button>
+  
 </ion-content>
+
+
