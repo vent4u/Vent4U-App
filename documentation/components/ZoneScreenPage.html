@@ -239,98 +239,116 @@ export class ZoneScreenPage implements OnInit {
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;ion-header [translucent]&#x3D;&quot;true&quot;&gt;
   &lt;ion-toolbar color&#x3D;&quot;warning&quot;&gt;
-  &lt;ion-title&gt;
-  Welcome to Zealand
+  &lt;ion-title&gt;&lt;br&gt;
+  &lt;h4&gt;Welcome to Zealand&lt;/h4&gt;
   &lt;/ion-title&gt;
   &lt;/ion-toolbar&gt;
  &lt;/ion-header&gt;
-
+  
  &lt;ion-content [fullscreen]&#x3D;&quot;true&quot;&gt;
-
-  &lt;ion-card&gt;
-  &lt;ion-grid&gt;
-  &lt;ion-row&gt;
+  
+  &lt;ion-grid class&#x3D;&quot;ion-wrap&quot;&gt;
+  &lt;ion-row class&#x3D;&quot; ion-align-items-center ion-padding-vertical&quot;&gt;
   &lt;ion-col&gt;
-  &lt;ion-label&gt;Climate outside&lt;/ion-label&gt;
+  &lt;div class&#x3D;&quot;ion-text-center &quot;&gt;
+  &lt;!-- &lt;ion-label&gt;Climate inside&lt;/ion-label&gt; --&gt;
+  &lt;ion-label &gt;&lt;/ion-label&gt;&lt;h1&gt;20&amp;deg;&lt;/h1&gt;&lt;/div&gt;
   &lt;/ion-col&gt;
-  &lt;ion-col&gt;
-  &lt;ion-icon name&#x3D;&quot;water-outline&quot;&gt;&lt;/ion-icon&gt;
-  &lt;ion-label&gt;40%&lt;/ion-label&gt;
-  &lt;ion-label&gt;Humidity&lt;/ion-label&gt;
-  &lt;/ion-col&gt;
-  &lt;/ion-row&gt;
-  &lt;ion-row&gt;
-  &lt;ion-col&gt;
-  &lt;ion-label &gt;20C&lt;/ion-label&gt;
-  &lt;/ion-col&gt;
-  &lt;ion-col&gt;
+  &lt;ion-col class&#x3D;&quot; ion-justify-content-around&quot;&gt;
+  &lt;div class&#x3D;&quot;ion-text-center&quot; &gt;
+  &lt;ion-icon slot&#x3D;&quot;ion-left-floating&quot; name&#x3D;&quot;water-outline&quot;&gt;&lt;/ion-icon&gt;
+  &lt;h5&gt;40%&lt;/h5&gt;
+  &lt;h6&gt;&lt;b&gt;Comfort&lt;/b&gt;&lt;/h6&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+  
+  &lt;/div&gt;&lt;br&gt;
+  &lt;div class&#x3D;&quot;ion-text-center&quot; &gt;&lt;h3&gt;
   &lt;ion-label&gt;CO2&lt;/ion-label&gt;
-  &lt;ion-progress-bar value&#x3D;&quot;0.5&quot;&gt;&lt;/ion-progress-bar&gt;
-  &lt;ion-label&gt;Good&lt;/ion-label&gt;
+  &lt;ion-progress-bar color&#x3D;&quot;success&quot; value&#x3D;&quot;0.4&quot;&gt;&lt;/ion-progress-bar&gt;
+  &lt;ion-label&gt;&lt;h5&gt;Good&lt;/h5&gt;&lt;/ion-label&gt;
+  &lt;/h3&gt;&lt;/div&gt;
   &lt;/ion-col&gt;
   &lt;/ion-row&gt;
   &lt;/ion-grid&gt;
-
-  &lt;/ion-card&gt;
-
-  &lt;ion-label class&#x3D;&quot;ion-text-wrap&quot;&gt;
-  Are you comfortable?
-  &lt;/ion-label&gt;
-  &lt;ion-button routerLink&#x3D;&quot;/opening-screen&quot; expand&#x3D;&quot;block&quot; size&#x3D;&quot;default&quot; color&#x3D;&quot;warning&quot; mode&#x3D;&quot;ios&quot;&gt;Yes, it&#x27;s perfect!&lt;/ion-button&gt;
-  &lt;ion-button routerLink&#x3D;&quot;/start-screen&quot; expand&#x3D;&quot;block&quot; size&#x3D;&quot;default&quot; color&#x3D;&quot;warning&quot; mode&#x3D;&quot;ios&quot;&gt;No,I want to change&lt;/ion-button&gt;
-
-  &lt;ion-card mode&#x3D;&quot;ios&quot;&gt;
-  &lt;ion-item&gt;
-  &lt;ion-icon name&#x3D;&quot;pin&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt;
-  &lt;ion-label&gt;Climate outside&lt;/ion-label&gt;
-  &lt;ion-button fill&#x3D;&quot;outline&quot; slot&#x3D;&quot;end&quot; href&#x3D;&quot;https://www.dmi.dk&quot;&gt;Details&lt;/ion-button&gt;
-  &lt;/ion-item&gt;
-  &lt;ion-card-content&gt;
-  &lt;!-- https://www.dmi.dk --&gt;
-  &lt;img src&#x3D;&quot;https://kodytechnolab.com/img/blog/small/cost-to-develop-weather-mobile-app-like-arabia-weather2.jpg&quot;&gt;
-  &lt;/ion-card-content&gt;
-  &lt;/ion-card&gt;
-
+  &lt;br&gt;
+  &lt;br&gt;
+  &lt;div&gt;
+  &lt;div class&#x3D;&quot;ion-text-center&quot;&gt;
+  &lt;ion-label class&#x3D;&quot;ion-text-wrap&quot;&gt;Are you comfortable?&lt;/ion-label&gt; &lt;/div&gt;
+  &lt;ion-button routerLink&#x3D;&quot;/opening-screen&quot; color&#x3D;&quot;warning&quot; expand&#x3D;&quot;block&quot;&gt;Yes,It&#x27;s pleasant!&lt;/ion-button&gt;
+  &lt;ion-button routerLink&#x3D;&quot;/start-screen&quot; color&#x3D;&quot;light&quot; expand&#x3D;&quot;block&quot;&gt;No, I want to change&lt;/ion-button&gt;
+  &lt;/div&gt;
+  
+  &lt;ion-grid class&#x3D;&quot;ion-wrap&quot;&gt;
+  &lt;ion-row class&#x3D;&quot; ion-align-items-center ion-padding-vertical&quot;&gt;
+  &lt;ion-col&gt;
+  &lt;div class&#x3D;&quot;ion-text-center &quot;&gt;&lt;h4&gt;14:00&lt;/h4&gt;&lt;/div&gt;
+  &lt;/ion-col&gt;
+  &lt;ion-col class&#x3D;&quot; ion-justify-content-around&quot;&gt;
+  &lt;div class&#x3D;&quot;ion-text-center&quot; &gt;&lt;h3&gt;&lt;b&gt;Roskilde&lt;/b&gt;&lt;/h3&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;br&gt;&lt;div class&#x3D;&quot;ion-text-center&quot; &gt;&lt;h3&gt;18&amp;deg;&lt;/h3&gt;&lt;/div&gt;
+  &lt;/ion-col&gt;
+  &lt;ion-col class&#x3D;&quot;ion-text-center ion-justify-content-center&quot; &gt;
+  &lt;svg xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; version&#x3D;&quot;1.1&quot; width&#x3D;&quot;30&quot; height&#x3D;&quot;30&quot; viewBox&#x3D;&quot;0 0 24 24&quot;&gt;&lt;path d&#x3D;&quot;M3.55,18.54L4.96,19.95L6.76,18.16L5.34,16.74M11,22.45C11.32,22.45 13,22.45 13,22.45V19.5H11M12,5.5A6,6 0 0,0 6,11.5A6,6 0 0,0 12,17.5A6,6 0 0,0 18,11.5C18,8.18 15.31,5.5 12,5.5M20,12.5H23V10.5H20M17.24,18.16L19.04,19.95L20.45,18.54L18.66,16.74M20.45,4.46L19.04,3.05L17.24,4.84L18.66,6.26M13,0.55H11V3.5H13M4,10.5H1V12.5H4M6.76,4.84L4.96,3.05L3.55,4.46L5.34,6.26L6.76,4.84Z&quot; /&gt;&lt;/svg&gt;
+  &lt;/ion-col&gt;
+  &lt;/ion-row&gt;
+  &lt;/ion-grid&gt;
+  
  &lt;/ion-content&gt;
-
- &lt;ion-footer&gt;
+  
+ &lt;ion-footer color&#x3D;&quot;warning&quot;&gt;
   &lt;ion-toolbar&gt;
   &lt;ion-tabs mode&#x3D;&quot;ios&quot;&gt;
   &lt;ion-tab-bar slot&#x3D;&quot;bottom&quot;&gt;
-
+  
   &lt;ion-item href&#x3D;&quot;#&quot;&gt;
   &lt;ion-tab-button tab&#x3D;&quot;profile&quot;&gt;
-  &lt;ion-icon name&#x3D;&quot;person-circle&quot;&gt;&lt;/ion-icon&gt;
+  &lt;ion-icon stok&#x3D;&quot;small&quot; name&#x3D;&quot;person-circle&quot;&gt;&lt;/ion-icon&gt;
   &lt;ion-label&gt;Profile&lt;/ion-label&gt;
   &lt;/ion-tab-button&gt;
+  &lt;br&gt;
   &lt;/ion-item&gt;
-
+  
   &lt;ion-item href&#x3D;&quot;#&quot;&gt;
   &lt;ion-tab-button href&#x3D;&quot;#&quot; tab&#x3D;&quot;settings&quot;&gt;
-  &lt;ion-icon name&#x3D;&quot;settings&quot;&gt;&lt;/ion-icon&gt;
+  &lt;ion-icon stok&#x3D;&quot;small&quot; name&#x3D;&quot;settings&quot;&gt;&lt;/ion-icon&gt;
   &lt;ion-label&gt;Settings&lt;/ion-label&gt;
   &lt;/ion-tab-button&gt;
   &lt;/ion-item&gt;
-
+  
   &lt;ion-item href&#x3D;&quot;#&quot;&gt;
   &lt;ion-tab-button href&#x3D;&quot;#&quot; tab&#x3D;&quot;chatbox-outline&quot;&gt;
-  &lt;ion-icon name&#x3D;&quot;chatbox-outline&quot;&gt;&lt;/ion-icon&gt;
+  &lt;ion-icon stok&#x3D;&quot;small&quot; name&#x3D;&quot;chatbox-outline&quot;&gt;&lt;/ion-icon&gt;
   &lt;ion-label&gt;Notification&lt;/ion-label&gt;
   &lt;/ion-tab-button&gt;
   &lt;/ion-item&gt;
-
+  
   &lt;/ion-tab-bar&gt;
-  &lt;/ion-tabs&gt;
+  &lt;/ion-tabs&gt; 
   &lt;/ion-toolbar&gt;
- &lt;/ion-footer&gt;
-</code></pre>
+ &lt;/ion-footer&gt;</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
                 <p class="comment">
                     <code>./zone-screen.page.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <pre class="line-numbers"><code class="language-scss">ion-grid {
+    height: 40%;
+   }
+   ion-toolbar {
+    height: 90px;
+   }
+   ion-footer {
+    height: 50px;
+   }
+   h1 {
+    font-size: 70px;
+   }
+    
+   h5 {
+    font-size: 10px;
+   }</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -358,7 +376,7 @@ export class ZoneScreenPage implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-header [translucent]="true">  <ion-toolbar color="warning">  <ion-title>  Welcome to Zealand  </ion-title>  </ion-toolbar> </ion-header> <ion-content [fullscreen]="true">  <ion-card>  <ion-grid>  <ion-row>  <ion-col>  <ion-label>Climate outside</ion-label>  </ion-col>  <ion-col>  <ion-icon name="water-outline"></ion-icon>  <ion-label>40%</ion-label>  <ion-label>Humidity</ion-label>  </ion-col>  </ion-row>  <ion-row>  <ion-col>  <ion-label >20C</ion-label>  </ion-col>  <ion-col>  <ion-label>CO2</ion-label>  <ion-progress-bar value="0.5"></ion-progress-bar>  <ion-label>Good</ion-label>  </ion-col>  </ion-row>  </ion-grid>  </ion-card>  <ion-label class="ion-text-wrap">  Are you comfortable?  </ion-label>  <ion-button routerLink="/opening-screen" expand="block" size="default" color="warning" mode="ios">Yes, it\'s perfect!</ion-button>  <ion-button routerLink="/start-screen" expand="block" size="default" color="warning" mode="ios">No,I want to change</ion-button>  <ion-card mode="ios">  <ion-item>  <ion-icon name="pin" slot="start"></ion-icon>  <ion-label>Climate outside</ion-label>  <ion-button fill="outline" slot="end" href="https://www.dmi.dk">Details</ion-button>  </ion-item>  <ion-card-content>  <!-- https://www.dmi.dk -->  <img src="https://kodytechnolab.com/img/blog/small/cost-to-develop-weather-mobile-app-like-arabia-weather2.jpg">  </ion-card-content>  </ion-card> </ion-content> <ion-footer>  <ion-toolbar>  <ion-tabs mode="ios">  <ion-tab-bar slot="bottom">  <ion-item href="#">  <ion-tab-button tab="profile">  <ion-icon name="person-circle"></ion-icon>  <ion-label>Profile</ion-label>  </ion-tab-button>  </ion-item>  <ion-item href="#">  <ion-tab-button href="#" tab="settings">  <ion-icon name="settings"></ion-icon>  <ion-label>Settings</ion-label>  </ion-tab-button>  </ion-item>  <ion-item href="#">  <ion-tab-button href="#" tab="chatbox-outline">  <ion-icon name="chatbox-outline"></ion-icon>  <ion-label>Notification</ion-label>  </ion-tab-button>  </ion-item>  </ion-tab-bar>  </ion-tabs>  </ion-toolbar> </ion-footer></div>'
+        var COMPONENT_TEMPLATE = '<div><ion-header [translucent]="true">  <ion-toolbar color="warning">  <ion-title><br>  <h4>Welcome to Zealand</h4>  </ion-title>  </ion-toolbar> </ion-header>   <ion-content [fullscreen]="true">    <ion-grid class="ion-wrap">  <ion-row class=" ion-align-items-center ion-padding-vertical">  <ion-col>  <div class="ion-text-center ">  <!-- <ion-label>Climate inside</ion-label> -->  <ion-label ></ion-label><h1>20&deg;</h1></div>  </ion-col>  <ion-col class=" ion-justify-content-around">  <div class="ion-text-center" >  <ion-icon slot="ion-left-floating" name="water-outline"></ion-icon>  <h5>40%</h5>  <h6><b>Comfort</b></h6>  </div>  <div>    </div><br>  <div class="ion-text-center" ><h3>  <ion-label>CO2</ion-label>  <ion-progress-bar color="success" value="0.4"></ion-progress-bar>  <ion-label><h5>Good</h5></ion-label>  </h3></div>  </ion-col>  </ion-row>  </ion-grid>  <br>  <br>  <div>  <div class="ion-text-center">  <ion-label class="ion-text-wrap">Are you comfortable?</ion-label> </div>  <ion-button routerLink="/opening-screen" color="warning" expand="block">Yes,It\'s pleasant!</ion-button>  <ion-button routerLink="/start-screen" color="light" expand="block">No, I want to change</ion-button>  </div>    <ion-grid class="ion-wrap">  <ion-row class=" ion-align-items-center ion-padding-vertical">  <ion-col>  <div class="ion-text-center "><h4>14:00</h4></div>  </ion-col>  <ion-col class=" ion-justify-content-around">  <div class="ion-text-center" ><h3><b>Roskilde</b></h3></div><div></div><br><div class="ion-text-center" ><h3>18&deg;</h3></div>  </ion-col>  <ion-col class="ion-text-center ion-justify-content-center" >  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="30" viewBox="0 0 24 24"><path d="M3.55,18.54L4.96,19.95L6.76,18.16L5.34,16.74M11,22.45C11.32,22.45 13,22.45 13,22.45V19.5H11M12,5.5A6,6 0 0,0 6,11.5A6,6 0 0,0 12,17.5A6,6 0 0,0 18,11.5C18,8.18 15.31,5.5 12,5.5M20,12.5H23V10.5H20M17.24,18.16L19.04,19.95L20.45,18.54L18.66,16.74M20.45,4.46L19.04,3.05L17.24,4.84L18.66,6.26M13,0.55H11V3.5H13M4,10.5H1V12.5H4M6.76,4.84L4.96,3.05L3.55,4.46L5.34,6.26L6.76,4.84Z" /></svg>  </ion-col>  </ion-row>  </ion-grid>   </ion-content>   <ion-footer color="warning">  <ion-toolbar>  <ion-tabs mode="ios">  <ion-tab-bar slot="bottom">    <ion-item href="#">  <ion-tab-button tab="profile">  <ion-icon stok="small" name="person-circle"></ion-icon>  <ion-label>Profile</ion-label>  </ion-tab-button>  <br>  </ion-item>    <ion-item href="#">  <ion-tab-button href="#" tab="settings">  <ion-icon stok="small" name="settings"></ion-icon>  <ion-label>Settings</ion-label>  </ion-tab-button>  </ion-item>    <ion-item href="#">  <ion-tab-button href="#" tab="chatbox-outline">  <ion-icon stok="small" name="chatbox-outline"></ion-icon>  <ion-label>Notification</ion-label>  </ion-tab-button>  </ion-item>    </ion-tab-bar>  </ion-tabs>   </ion-toolbar> </ion-footer></div>'
     var COMPONENTS = [{'name': 'AdjustTempPage', 'selector': 'app-adjust-temp'},{'name': 'AdjustTempPage', 'selector': 'app-adjust-temp'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ExploreContainerComponent', 'selector': 'app-explore-container'},{'name': 'OpeningScreenPage', 'selector': 'app-opening-screen'},{'name': 'PickZonePage', 'selector': 'app-pick-zone'},{'name': 'SignInPage', 'selector': 'app-sign-in'},{'name': 'StartScreenPage', 'selector': 'app-start-screen'},{'name': 'SystemresetedPage', 'selector': 'app-systemreseted'},{'name': 'SystemSolutionPage', 'selector': 'app-system-solution'},{'name': 'Tab1Page', 'selector': 'app-tab1'},{'name': 'Tab2Page', 'selector': 'app-tab2'},{'name': 'Tab3Page', 'selector': 'app-tab3'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TempSumPage', 'selector': 'app-temp-sum'},{'name': 'WelcomeScreenPage', 'selector': 'app-welcome-screen'},{'name': 'ZoneScreenPage', 'selector': 'app-zone-screen'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'ZoneScreenPage'};
