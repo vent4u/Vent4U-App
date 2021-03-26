@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
      <ion-back-button defaultHref ="start-screen"></ion-back-button>
     </ion-buttons>         
-    <ion-title>Sign-in</ion-title>
+    <ion-title>Sign in</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -12,7 +12,7 @@
 <ion-content >
   <div class="center">
   
-      <form #form="ngForm" (ngSubmit)="Login(form)">
+      <form #form="ngForm" (ngSubmit)="(form)">
       <ion-grid>
         <ion-row color="primary" justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
@@ -28,7 +28,7 @@
               
              </div>
             <div padding>
-              <ion-button routerLink="/tabs/tab1" size="medium" type="submit" [disabled]="form.invalid" expand="block">Sign-in</ion-button>
+              <ion-button routerLink="/tabs/tab1" size="medium" type="submit" [disabled]="form.invalid" expand="block">Sign in</ion-button>
             </div>
             <div id ="container">
              <a target="_blank" rel ="noopener noreferrer" href="https://sumit.dk/">Forgot your password?</a>
